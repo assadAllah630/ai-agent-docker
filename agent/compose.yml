@@ -1,0 +1,13 @@
+# compose.yml: تشغيل خدمة agent فقط مع دعم OpenRouter
+version: '3.8'
+services:
+  agent:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=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
+      - OPENAI_API_BASE=https://openrouter.ai/api/v1
+      - OPENAI_MODEL=deepseek/deepseek-chat-v3-0324:free 

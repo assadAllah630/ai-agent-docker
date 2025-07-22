@@ -1,0 +1,10 @@
+# requirements.txt: الحزم المطلوبة لتشغيل LangGraph Agent
+langchain
+langgraph
+openai
+langchain-community
+langchain-openai
+fastapi
+uvicorn
+pandas
+openpyxl 

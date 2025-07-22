@@ -1,0 +1,11 @@
+# compose.yml: تشغيل خدمة agent فقط
+version: '3.8'
+services:
+  agent:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=sk-... # ضع مفتاح OpenAI الصحيح هنا 
